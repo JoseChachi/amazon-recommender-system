@@ -1,0 +1,11 @@
+
+## Omitting zip files on gift cards
+data/raw/Gift_Cards.jsonl
+data/raw/meta_Gift_Cards.jsonl
+
+
+## Omitting amazon reviews on video games
+data/raw/Video_Games.jsonl
+data/raw/meta_Video_Games.jsonl
+data/raw/Video_Games.jsonl.gz
+data/raw/meta_Video_Games.jsonl.gz
