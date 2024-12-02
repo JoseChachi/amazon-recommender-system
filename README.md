@@ -92,6 +92,10 @@ El cargado de nuestro dataset se lleva a cabo utilizando MongoDB, herramienta qu
 
 ## **Dificultades**
 
+- ⁠Elegir el algoritmo ideal para el aprendizaje de nuestro modelo
+- ⁠Elevado costo computacional al momento del etiquetado y entrenamiento del modelo, debido a la falta de GPU
+- ⁠La imiplementacion del modelo nos obligaba a escoger los hiperparametros adecuados para garantizar un mejor accuracy
+  
 ## **Conclusiones**
 
 ### **Posibles mejoras**
