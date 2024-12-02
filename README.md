@@ -139,6 +139,8 @@ La curva ROC muestra qué tan bien el modelo distingue entre reseñas positivas 
 
 ### **Posibles mejoras**
 
-- 
+- Ajustar los hiperparámetros con validación cruzada para evitar sobreajuste y mejorar la generalización del modelo.
+- Mejorar el balanceo de clases, aplicando smote solo a características numericas y para la parte de texto usar técnicas como resampling basado en tokens (Word2Vec, GPT).
+- Implementar un pipeline para limpieza de texto que incluya detección de idiomas, para mejorar el manejo de textos en varios idiomas.
 
 
