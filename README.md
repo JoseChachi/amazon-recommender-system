@@ -60,6 +60,7 @@ Dificultades técnicas que tuvimos fue:
 - Dask y Pandas
 - LLM y Random Forest
 - Seguimiento de experimentos (W&B)
+- Spark
 
 ## **Cómo ejecutar el proyecto**
 1. Tener instalado Python 3.12 
