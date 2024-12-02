@@ -52,6 +52,7 @@ Dificultades técnicas que tuvimos fue:
 * Desbalanceo del dataset, estos tienen mas reviews positivas que negativas, lo cual puede afectar en la etapa de entrenamiento del modelo, por lo que es vital filtrarlo de manera adecuada y equitativa
 * Manejo de lenguaje, ya que el dataset contiene variados textos en diferentes idiomas, lo cual podria afectar el etiquetado de nuestro modelo a traves de la LLM.
 * Implementacion del modelo LLM para el etiquetado de nuestro dataset, tanto en Pandas como Dask.
+* El modelo LLM solo permite 512 tokens de texto, ante esto, se tuvo que filtrar aquella data que no exceda esta cantidad.
 
 ## **Herramientas empleadas**
 - MongoDB
