@@ -91,7 +91,8 @@ El cargado de nuestro dataset se lleva a cabo utilizando MongoDB, herramienta qu
 ### **Análisis**
 
 #### **Test accuracy**
-El uso de WandB facilitó la comparación entre varias configuraciones de hiperparámetros, permitiendo seleccionar los que maximizaron el desempeño en términos de precisión. De todos los experimentos, el fresh-wind-25 tuvo el de mejor desempeño con un accuracy de 92.38%, y usando como base los siguientes hiperparámetros, n_estimators: 200, max_depth: null, min_samples_split: 2 
+
+El uso de WandB facilitó la comparación entre varias configuraciones de hiperparámetros, permitiendo seleccionar los hiperparametros que maximizaron el desempeño en términos de precisión. De todos los experimentos, el fresh-wind-25 tuvo el de mejor desempeño con un accuracy de 92.38%, y usando como base los siguientes hiperparámetros, n_estimators: 200, max_depth: null, min_samples_split: 2 
 
 <p align="center">
   <img src="test_accuracy.png" alt="Test accuracy" width="400"/>
@@ -109,9 +110,11 @@ El siguiente reporte muestra las métricas de clasificación obtenidas con los d
 | **Macro Avg** | 0.92      | 0.92   | 0.92     | 66243   |
 | **Weighted Avg** | 0.92  | 0.92   | 0.92     | 66243   |
 
-
+El modelo seleccionado alcanzó un accuracy de 92.38% en los datos de prueba. La clase 0 (reviews negativas) obtuvo una precisión del 91% y un recall del 94%, mientras que la clase 1 (reviews positivas) alcanzó una precisión del 94% y un recall del 91%. Indicando un buen desempeño de predicción para ambas clases.
 
 #### **Matriz de confusion**
+
+La matriz de confusión muestra el desempeño del modelo al clasificar correctamente 31,130 reseñas negativas y 30,066, mostrandando una buena prediccion para ambas clases. Sin embargo, se observan 1,908 falsos positivos  y 3,139 falsos negativos. Esto indica que el modelo podria clasificar incorrectamente las clases, por lo que necesita ajustar los hiperparámetros, balancear aún más los datos o considerar otras características.
 
 <p align="center">
   <img src="matriz_confusion.png" alt="Matriz de confusión" width="400"/>
