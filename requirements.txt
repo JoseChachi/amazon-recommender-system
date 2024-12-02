@@ -137,3 +137,5 @@ wandb
 tensorflow 
 matplotlib 
 imbalanced-learn
+seaborn
+wordcloud
