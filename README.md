@@ -90,6 +90,23 @@ El cargado de nuestro dataset se lleva a cabo utilizando MongoDB, herramienta qu
 
 ### **Análisis**
 
+- Test accuracy
+<p align="center">
+  <img src="test_accuracy.png" alt="Test accuracy" width="400"/>
+</p>
+
+- Matriz de confusion
+<p align="center">
+  <img src="matriz_confusion.png" alt="Matriz de confusión" width="400"/>
+</p>
+
+- Curva ROC
+<p align="center">
+  <img src="curva_roc.png" alt="Curva ROC" width="400"/>
+</p>
+
+
+
 ## **Dificultades**
 
 - ⁠Elegir el algoritmo ideal para el aprendizaje de nuestro modelo
