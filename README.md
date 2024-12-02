@@ -74,7 +74,20 @@ Dificultades técnicas que tuvimos fue:
 
 ### **Diagrama**
 
+<p align="center">
+  <img src="DiagramaGranDato.png" alt="Test accuracy" width="400"/>
+</p>
+
 ### **Descripción**
+
+El flujo de procesamiento de datos está estructurado en tres partes principales: 
+- Extracción: Se inicia con un script que descarga y almacena datos de revisiones de Amazon 2023, relacionados con tarjetas de regalo, utilizando una conexión HTTP. Los datos se almacenan en una base de datos para su posterior análisis.
+
+- Transformación: Los datos extraídos pasan por un proceso de limpieza y transformación utilizando Dask para manejo eficiente de datos a gran escala. Se filtran revisiones con condiciones específicas y se procesan categorías principales. Además, se integran etiquetas generadas con un modelo DistilBERT.
+
+- Cargado: Los datos transformados se exportan en formato JSON y se equilibran las clases con SMOTE. Se utiliza Apache Spark para dividir los datos en un conjunto de entrenamiento y realizar una clasificación con Random Forest, evaluando el desempeño mediante métricas como el área bajo la curva ROC.
+
+El flujo culmina con la generación de resultados analíticos, gráficos y métricas clave.
 
 ## **Proceso ETL**
 
@@ -137,6 +150,20 @@ La curva ROC muestra qué tan bien el modelo distingue entre reseñas positivas 
 - ⁠La implementacion del modelo nos obligaba a escoger los hiperparametros adecuados para garantizar un mejor accuracy
   
 ## **Conclusiones**
+
+- Dask es más rápido que Pandas en ciertos casos, pues Dask manejan los datos y las tareas de procesamiento en paralelo.
+
+- El modelo alcanzó un accuracy de 92.38%, con un buen equilibrio en las métricas de precisión, recall y F1-Score para ambas clases.
+
+- La Clase 1 (reseñas positivas) tiene una precisión más alta (94%), mientras que la Clase 0 (reseñas negativas) tiene un recall más alto (94%).
+
+- Se observan 1,908 falsos positivos y 3,139 falsos negativos, lo que sugiere que el modelo podría beneficiarse de ajustes en los hiperparámetros y en el balance de datos.
+
+- El AUC de 0.98 indica que el modelo es altamente efectivo para distinguir entre reseñas positivas y negativas.
+
+- WandB facilitó la comparación entre experimentos y la selección de los mejores hiperparámetros.
+
+- El entrenamiento sin GPU incrementó el costo computacional y alargó el tiempo de procesamiento.
 
 ### **Posibles mejoras**
 
