@@ -114,7 +114,7 @@ El modelo seleccionado alcanzó un accuracy de 92.38% en los datos de prueba. La
 
 #### **Matriz de confusion**
 
-La matriz de confusión muestra el desempeño del modelo al clasificar correctamente 31,130 reseñas negativas y 30,066, mostrandando una buena prediccion para ambas clases. Sin embargo, se observan 1,908 falsos positivos  y 3,139 falsos negativos. Esto indica que el modelo podria clasificar incorrectamente las clases, por lo que necesita ajustar los hiperparámetros, balancear aún más los datos o considerar otras características.
+La matriz de confusión muestra el desempeño del modelo clasificando 31,130 reseñas negativas y 30,066 reseñas positivas, mostrandando una buena prediccion para ambas clases. Sin embargo, se observan 1,908 falsos positivos  y 3,139 falsos negativos. Esto indica que el modelo podria clasificar incorrectamente las clases, por lo que se necesita ajustar los hiperparámetros, balancear aún más los datos o considerar otras características.
 
 <p align="center">
   <img src="matriz_confusion.png" alt="Matriz de confusión" width="400"/>
@@ -122,20 +122,23 @@ La matriz de confusión muestra el desempeño del modelo al clasificar correctam
 
 #### **Curva ROC**
 
+La curva ROC muestra qué tan bien el modelo distingue entre reseñas positivas y negativas. En nuestro caso, el área bajo la curva es 0.98, lo cual indica que el modelo es bueno para identificar las reseñas, tanto positivas como negativas.
+
 <p align="center">
   <img src="curva_roc.png" alt="Curva ROC" width="400"/>
 </p>
-
 
 
 ## **Dificultades**
 
 - ⁠Elegir el algoritmo ideal para el aprendizaje de nuestro modelo
 - ⁠Elevado costo computacional al momento del etiquetado y entrenamiento del modelo, debido a la falta de GPU
-- ⁠La imiplementacion del modelo nos obligaba a escoger los hiperparametros adecuados para garantizar un mejor accuracy
+- ⁠La implementacion del modelo nos obligaba a escoger los hiperparametros adecuados para garantizar un mejor accuracy
   
 ## **Conclusiones**
 
 ### **Posibles mejoras**
+
+- 
 
 
